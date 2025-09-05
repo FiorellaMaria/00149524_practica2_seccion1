@@ -49,18 +49,16 @@ h1, p {
 }
 
 .container {
-    display: grid; /* or inline-grid */
-    grid-template-columns:
-        1fr 1fr
-        minmax(10px, 1fr) 3fr
-        repeat(5, 1fr)
-        50px auto 100px 1fr;
-    /* e.g.
-    grid-template-rows:
-        min-content 1fr min-content
-        100px 1fr max-content
-    */
+    display: flex; /* or inline-flex */
+    flex-direction: "column"; /* O Row dependiendo del caso */
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
 }
+
 
 .item {
     flex-grow: 1; /* espacio de los elementos internos */
