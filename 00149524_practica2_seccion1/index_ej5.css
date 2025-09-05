@@ -1,0 +1,90 @@
+/* Universal */
+* {
+    box-sizing: border-box;
+}
+
+/* Type or Tag */
+p {
+    margin-block: 1.5rem;
+}
+
+/* Classname */
+.class {
+    text-decoration: underline;
+}
+
+/* ID */
+#id {
+    font-family: monospace;
+}
+
+/* Relational */
+li:has(a) {
+    display: flex;
+}
+
+/* Descendant */
+header h1 {
+    /* Selects all Heading 1*/
+}
+
+/* Child */
+header > h1 {
+    /* Selects all Heading 1 that are direct children of header */
+}
+
+/* General sibling */
+h1 ~ p {
+    /* Selects a Paragraph after a Heading 1 */
+}
+
+/* Adjacent sibling */
+h1 + p {
+    /* Selects a Paragraph immediately following a Heading 1 */
+}
+
+/* Chained */
+h1, p {
+/* Selects both elements. */
+}
+
+.item {
+    flex-grow: 1; /* espacio de los elementos internos */
+}
+
+.item-2 {
+    flex-grow: 2; /* espacio especial de elemento item-2 */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    background-color: #ADF5CA;
+    
+}
+
+.item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-2 {
+    background-color: #F5E1AB;
+    padding: 20px;
+    text-align: center;
+}
+
+.item-4 {
+    background-color: #80F5DB;
+    padding: 20px;
+    text-align: center;
+}
+
+.item-6 {
+    background-color: #80F5DB;
+    padding: 20px;
+    text-align: center;
+}
